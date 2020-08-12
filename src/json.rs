@@ -17,3 +17,7 @@ pub fn read(file: &str) -> Result<()> {
 
     Ok(())
 }
+
+pub fn create() {
+    println!("Creating files");   
+}
