@@ -6,6 +6,6 @@ pub fn open(path: &str) -> String {
     res
 }
 
-pub fn create<T>(data: T) {
-    println!("Creating new data");
-}
+// pub fn create<T>(data: T) {
+//     println!("Creating new data");
+// }
