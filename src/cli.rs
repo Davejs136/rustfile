@@ -29,7 +29,7 @@ pub fn clear() {
 }
 
 pub fn help() {
-  prints!("new [newdb] ---> create a new DB");
+  println!("new [newdb] ---> create a new DB");
   println!("new [newdb]  ---> Create a new DB");
   println!("use [dbname] ---> Use database selected");
   println!("show         ---> Show all databases");

@@ -1,11 +1,10 @@
-mod json;
 mod file;
 mod cli;
 
 fn main() {
     // let mut option = String::new();
     let res = file::open("data.json");
-    json::read(&res).unwrap();
+    file::read(&res).unwrap();
 
     loop {
         cli::prompt("> ");
