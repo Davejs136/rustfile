@@ -1,22 +1,13 @@
-mod file;
 mod cli;
+mod core;
+
+use crate::core::file;
 
 fn main() {
-    // let mut option = String::new();
     let res = file::open("data.json");
     file::read(&res).unwrap();
 
-    loop {
-        cli::prompt("> ");
-        let option = cli::input().trim().to_string();
+    // cli::init();
 
-        dbg!(&option);
-
-        match &option as &str {
-            "help" | "h" => cli::help(),
-            "clear" => cli::clear(),
-            "exit" | "quit" | "q" => break,
-            _ => println!("command no valid")
-        }
-    }
+    println!("\x1b[0;31mSO\x1b[0m");
 }
