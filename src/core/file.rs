@@ -1,5 +1,6 @@
 use serde::{Deserialize, Serialize};
-use serde_json::{Result};
+use serde_json::Result;
+use std::fs::read_to_string;
 
 #[derive(Serialize, Deserialize)]
 struct Data {
@@ -17,3 +18,17 @@ pub fn read(file: &str) -> Result<()> {
 
     Ok(())
 }
+
+pub fn create() {
+    println!("Creating files");
+}
+
+pub fn open(path: &str) -> String {
+    let path = path;
+    let res = read_to_string(path).unwrap();
+    res
+}
+
+// pub fn create<T>(data: T) {
+//     println!("Creating new data");
+// }

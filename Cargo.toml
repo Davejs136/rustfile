@@ -1,5 +1,5 @@
 [package]
-name = "filedb"
+name = "rustfile"
 version = "0.1.0"
 authors = ["Davejs136 <davejs136@gmail.com>"]
 edition = "2018"
